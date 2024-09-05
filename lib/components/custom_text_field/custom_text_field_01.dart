@@ -10,7 +10,8 @@ class CustomTextField extends StatefulWidget {
     super.key,
     required this.label,
     required this.icon,
-    this.isPassword = false, required this.controller,
+    this.isPassword = false,
+    required this.controller,
   });
 
   @override
@@ -18,12 +19,12 @@ class CustomTextField extends StatefulWidget {
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
-  bool isObscure = true;
+  bool isObscure = false;
   @override
   Widget build(BuildContext context) {
     return TextField(
       controller: widget.controller,
-      obscureText: isObscure,
+      obscureText: widget.isPassword?!isObscure:isObscure,
       decoration: InputDecoration(
           label: Text(widget.label),
           border: const OutlineInputBorder(),
