@@ -2,6 +2,7 @@ import 'package:adidas_app/components/custom_buttons/custom_button1.dart';
 import 'package:adidas_app/components/custom_buttons/google_button.dart';
 import 'package:adidas_app/components/custom_text/custom_poppins_text.dart';
 import 'package:adidas_app/components/custom_text_field/custom_text_field_01.dart';
+import 'package:adidas_app/screens/auth_screen/reset_password_page.dart';
 import 'package:adidas_app/screens/auth_screen/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,7 +38,7 @@ class _SigninPageState extends State<SigninPage> {
             ),
             const CustomPoppinsText(
               text: "Please fill your details to access your account",
-              fontSize: 17,
+              fontSize: 14,
               fontWeight: FontWeight.w300,
               color: Colors.black,
             ),
@@ -68,21 +69,32 @@ class _SigninPageState extends State<SigninPage> {
                   fontWeight: FontWeight.w300,
                 ),
                 const Spacer(),
-                CustomPoppinsText(
-                  text: "Forget Password?",
-                  fontSize: 14,
-                  fontWeight: FontWeight.w300,
-                  color: Colors.orange.shade800,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) {
+                        return ResetPassword();
+                      },
+                    ));
+                  },
+                  child: CustomPoppinsText(
+                    text: "Forget Password?",
+                    fontSize: 14,
+                    fontWeight: FontWeight.w300,
+                    color: Colors.orange.shade800,
+                  ),
                 ),
               ],
             ),
             const SizedBox(height: 15),
             CustomButton1(
+              text: "Sign in",
               size: size,
               onTap: () {},
             ),
             const SizedBox(height: 10),
             GoogleButton(
+              text: "Sign in with google",
               size: size,
               onTap: () {},
             ),
@@ -92,7 +104,7 @@ class _SigninPageState extends State<SigninPage> {
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(
                     builder: (context) {
-                      return SignupPage();
+                      return const SignupPage();
                     },
                   ));
                 },

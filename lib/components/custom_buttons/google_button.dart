@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 class GoogleButton extends StatelessWidget {
   const GoogleButton({
     super.key,
-    required this.size, required this.onTap,
+    required this.size, required this.onTap, required this.text,
   });
 
   final Size size;
   final VoidCallback onTap;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +31,8 @@ class GoogleButton extends StatelessWidget {
                 width: 30,
               ),
               const SizedBox(width: 5),
-              const CustomPoppinsText(
-                text: "Sign in with google",
+              CustomPoppinsText(
+                text: text,
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
                 color: Colors.black,

@@ -1,3 +1,4 @@
+import 'package:adidas_app/screens/auth_screen/reset_password_page.dart';
 import 'package:adidas_app/screens/auth_screen/signin_page.dart';
 import 'package:adidas_app/screens/auth_screen/signup_page.dart';
 import 'package:adidas_app/screens/splash_screen/splash_screen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
