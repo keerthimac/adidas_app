@@ -10,9 +10,9 @@ class CustomPoppinsText extends StatelessWidget {
   const CustomPoppinsText(
       {super.key,
       required this.text,
-      required this.fontSize,
-      required this.fontWeight,
-      this.color=Colors.black});
+      this.fontSize = 20,
+      this.fontWeight = FontWeight.normal,
+      this.color = Colors.black});
 
   @override
   Widget build(BuildContext context) {

@@ -25,10 +25,10 @@ class _ResetPasswordState extends State<ResetPassword> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
+            const Row(
               children: [
                 BackButton(),
-                const CustomPoppinsText(
+                CustomPoppinsText(
                   text: "Reset your password",
                   fontSize: 26,
                   fontWeight: FontWeight.w600,

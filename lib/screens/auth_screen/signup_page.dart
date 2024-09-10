@@ -4,6 +4,7 @@ import 'package:adidas_app/components/custom_text/custom_poppins_text.dart';
 import 'package:adidas_app/components/custom_text_field/custom_text_field_01.dart';
 import 'package:adidas_app/screens/auth_screen/reset_password_page.dart';
 import 'package:adidas_app/screens/auth_screen/signin_page.dart';
+import 'package:adidas_app/utils/custom_navigators.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -81,7 +82,7 @@ class _SignupPageState extends State<SignupPage> {
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
-                        return ResetPassword();
+                        return const ResetPassword();
                       },
                     ));
                   },
@@ -110,11 +111,7 @@ class _SignupPageState extends State<SignupPage> {
             Center(
               child: InkWell(
                 onTap: () {
-                  Navigator.pop(context, MaterialPageRoute(
-                    builder: (context) {
-                      return const SigninPage();
-                    },
-                  ));
+                  CustomNavigators.goBack(context, SigninPage());
                 },
                 child: Text.rich(
                     TextSpan(text: "Already have an account? ", children: [

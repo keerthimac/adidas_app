@@ -1,6 +1,3 @@
-import 'package:adidas_app/screens/auth_screen/reset_password_page.dart';
-import 'package:adidas_app/screens/auth_screen/signin_page.dart';
-import 'package:adidas_app/screens/auth_screen/signup_page.dart';
 import 'package:adidas_app/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
