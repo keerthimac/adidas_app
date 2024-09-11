@@ -111,7 +111,7 @@ class _SignupPageState extends State<SignupPage> {
             Center(
               child: InkWell(
                 onTap: () {
-                  CustomNavigators.goBack(context, SigninPage());
+                  CustomNavigators.goBack(context, const SigninPage());
                 },
                 child: Text.rich(
                     TextSpan(text: "Already have an account? ", children: [

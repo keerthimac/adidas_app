@@ -73,7 +73,7 @@ class _SigninPageState extends State<SigninPage> {
                 const Spacer(),
                 InkWell(
                   onTap: () {
-                    CustomNavigators.goTo(context, ResetPassword());
+                    CustomNavigators.goTo(context, const ResetPassword());
                   },
                   child: CustomPoppinsText(
                     text: "Forget Password?",
@@ -89,7 +89,7 @@ class _SigninPageState extends State<SigninPage> {
               text: "Sign in",
               size: size,
               onTap: () {
-                CustomNavigators.goTo(context, Homepage());
+                CustomNavigators.goTo(context, const Homepage());
               },
             ),
             const SizedBox(height: 10),
@@ -102,7 +102,7 @@ class _SigninPageState extends State<SigninPage> {
             Center(
               child: InkWell(
                 onTap: () {
-                  CustomNavigators.goTo(context, SignupPage());
+                  CustomNavigators.goTo(context, const SignupPage());
                 },
                 child: Text.rich(
                     TextSpan(text: "Dont have an account? ", children: [
