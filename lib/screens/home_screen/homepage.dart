@@ -5,6 +5,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'widgets/action_bar.dart';
+import 'widgets/custom_carousel_slider.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -22,6 +25,7 @@ class _HomepageState extends State<Homepage> {
   ];
 
   List<SneakerModel> sneakers = SneakersData.sneakers;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,27 +36,7 @@ class _HomepageState extends State<Homepage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CircleAvatar(
-                        backgroundColor: Colors.orange,
-                        child: IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.menu,
-                              color: Colors.white,
-                            ))),
-                    CircleAvatar(
-                        backgroundColor: Colors.orange,
-                        child: IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.search,
-                              color: Colors.white,
-                            )))
-                  ],
-                ),
+                ActionBar(),
                 const SizedBox(
                   height: 8,
                 ),
@@ -68,24 +52,8 @@ class _HomepageState extends State<Homepage> {
                 const SizedBox(
                   height: 8,
                 ),
-                CarouselSlider(
-                  options: CarouselOptions(height: 200.0, autoPlay: true),
-                  items: SneakersData.images.map((i) {
-                    return Builder(
-                      builder: (BuildContext context) {
-                        return Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 10,
-                          margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                          decoration: BoxDecoration(
-                              color: Colors.amber,
-                              borderRadius: BorderRadius.circular(20),
-                              image: DecorationImage(
-                                  image: NetworkImage(i), fit: BoxFit.cover)),
-                        );
-                      },
-                    );
-                  }).toList(),
+                CustomCarouselSlider(
+                  list: SneakersData.images,
                 ),
                 const SizedBox(
                   height: 8,
