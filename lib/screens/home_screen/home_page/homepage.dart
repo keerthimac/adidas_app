@@ -5,7 +5,6 @@ import 'package:adidas_app/screens/home_screen/home_page/widgets/categories_list
 import 'package:adidas_app/utils/home_icons_list.dart';
 import 'package:adidas_app/utils/sneakers_data.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'widgets/action_bar.dart';
 import 'widgets/custom_carousel_slider.dart';
