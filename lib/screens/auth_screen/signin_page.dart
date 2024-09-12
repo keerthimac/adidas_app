@@ -4,7 +4,8 @@ import 'package:adidas_app/components/custom_text/custom_poppins_text.dart';
 import 'package:adidas_app/components/custom_text_field/custom_text_field_01.dart';
 import 'package:adidas_app/screens/auth_screen/reset_password_page.dart';
 import 'package:adidas_app/screens/auth_screen/signup_page.dart';
-import 'package:adidas_app/screens/home_screen/homepage.dart';
+import 'package:adidas_app/screens/home_screen/cart_screen/cart_screen.dart';
+import 'package:adidas_app/screens/home_screen/home_page/homepage.dart';
 import 'package:adidas_app/utils/custom_navigators.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -89,7 +90,7 @@ class _SigninPageState extends State<SigninPage> {
               text: "Sign in",
               size: size,
               onTap: () {
-                CustomNavigators.goTo(context, const Homepage());
+                CustomNavigators.goTo(context, const CartScreen());
               },
             ),
             const SizedBox(height: 10),
