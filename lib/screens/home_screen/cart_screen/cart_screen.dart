@@ -70,12 +70,12 @@ class _CartScreenState extends State<CartScreen> {
                                 ),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Container(
                               width: 80,
                               height: 40,
                               decoration: BoxDecoration(
-                                  color: Color(0xFFEBEEF0),
+                                  color: const Color(0xFFEBEEF0),
                                   borderRadius: BorderRadius.circular(35),
                                   border: Border.all(
                                       color: Colors.orange.shade900)),
@@ -87,7 +87,7 @@ class _CartScreenState extends State<CartScreen> {
                                     Icons.remove,
                                     color: Colors.orange.shade900,
                                   ),
-                                  CustomPoppinsText(text: "1"),
+                                  const CustomPoppinsText(text: "1"),
                                   Icon(
                                     Icons.add,
                                     color: Colors.orange.shade900,
@@ -95,7 +95,7 @@ class _CartScreenState extends State<CartScreen> {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             )
                           ],
@@ -118,7 +118,7 @@ class _CartScreenState extends State<CartScreen> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CustomPoppinsText(
+                          const CustomPoppinsText(
                             text: "Total",
                             color: Colors.white,
                           ),

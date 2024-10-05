@@ -1,0 +1,25 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "adidas-app-7d870",
+                    "appId": "1:228060074783:android:e96ea53a7bc49642a0162a",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "adidas-app-7d870",
+                    "configurations": {
+                        "android": "1:228060074783:android:e96ea53a7bc49642a0162a",
+                        "ios": "1:228060074783:ios:eb80df29297ec998a0162a",
+                        "macos": "1:228060074783:ios:eb80df29297ec998a0162a",
+                        "web": "1:228060074783:web:e63a88b4beeaeda9a0162a",
+                        "windows": "1:228060074783:web:9616172593883abda0162a"
+                    }
+                }
+            }
+        }
+    }
+}

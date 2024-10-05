@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "228060074783",
+    "project_id": "adidas-app-7d870",
+    "storage_bucket": "adidas-app-7d870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228060074783:android:e96ea53a7bc49642a0162a",
+        "android_client_info": {
+          "package_name": "edu.keerthimac.adidasapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMhwMEh1FS2K6iFOR2PdtmSSZEpB31gCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
